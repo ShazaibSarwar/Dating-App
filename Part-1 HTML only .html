@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment 1 Form Application</title>
+</head>
+
+<body>
+    <h2>Please Enter your Details for our Datig Wesite!</h2>
+    <form action="backend.php">
+
+        <fieldset>
+            <legend>Your Face</legend>
+            <div>
+                <label for="imgChooser">Your Image : </label>
+                <input type="file" name="imgChooser" id="imgChooser" accept="image/*">
+            </div>
+            <div>
+                Image Preview :
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Geeral Details</legend>
+            <div>
+                <label for="my_name">Name : </label>
+                <input type="text" name="my_name" id="my_name" placeholder="Your Full Name">
+            </div>
+            <div>
+                Gender :<input type="radio" name="gen" id="gen"> Male
+                <input type="radio" name="gen" id="gen"> Female
+            </div>
+            <div>
+                <label for="age">Age :</label>
+                <input type="number" name="age" id="age">
+            </div>
+            <div>
+                <label for="dob">Date of Birth :</label>
+                <input type="date" name="dob" id="dob">
+            </div>
+            <div>
+                <label for="favColor">Favourite Color :</label>
+                <input type="color" name="favColor" id="favColor">
+            </div>
+            <div>
+                <label for="country">Which country :</label>
+                <select name="country" id="country">
+                    <option value="AF">Afghanistan</option>
+                    <option value="AX">Åland Islands</option>
+                    <option value="AU">Australia</option>
+                    <option value="AT">Austria</option>
+                    <option value="AZ">Azerbaijan</option>
+                    <option value="BS">Bahamas</option>
+                    <option value="BH">Bahrain</option>
+                    <option value="KH">Cambodia</option>
+                    <option value="CM">Cameroon</option>
+                    <option value="CA">Canada</option>
+                    <option value="PK">Pakistan</option>
+                    <option value="PW">Palau</option>
+                    <option value="PS">Palestinian Territory, Occupied</option>
+                    <option value="PA">Panama</option>
+                    <option value="PG">Papua New Guinea</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Your Indicators</legend>
+            <div>
+                <label for="height">Height : </label>
+                Small <input type="range" name="height" id="height" min="0" max="100" step="1" value="25"> Tall
+            </div>
+            <div>
+                <label for="sal">Salary : </label>
+                Poor <input type="range" name="sal" id="height" min="15000" max="100000" step="5000" value="50000"> Rich
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Your Cotact Iformation</legend>
+            <div>
+                <label for="email">Email : </label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="num">Mobile : </label>
+                <input type="tel" name="num" id="num">
+            </div>
+            <div>
+                <label for="address">Address : </label>
+                <textarea name="address" id="address" cols="20" rows="3"></textarea>
+            </div>
+            <div>
+                Method to Contact you :
+                <input type="radio" name="method" > Email
+                <input type="radio" name="method"> WhatsApp
+                <input type="radio" name="method"> In-App Chat
+            </div>
+        </fieldset>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+h2{
+    font-family: calibri;
+}
+fieldset{
+    background-color: lightyellow;
+    border: solid yellow;
+    border-width: 10px;
+    margin-bottom: 10px;
+    width: 720px;
+}
+label{
+    width: 180px;
+    display: inline-block;
+    text-align: right;
+    text-align: top;
+    font-family: calibri;
+}
+textarea{
+    width: 360px;
+    height: 50px;
+}
+legend{
+    font-weight: bold;
+    font-size: 13pt;
+    font-family:  Calibri;
+}
+.redBg{
+    background-color: red;
+    height: 30px;
+    width: 50px;
+    text-align: center;
+    color: white;
+}
+.purpleBg{
+    background-color: purple;
+    height: 30px;
+    width: 50px;
+    text-align: center;
+    color: white;
+}
+input{
+    margin-bottom: 5px;
+}
+
